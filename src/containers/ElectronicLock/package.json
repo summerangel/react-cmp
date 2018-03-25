@@ -1,0 +1,6 @@
+{
+  "name": "ElectronicLock",
+  "version": "0.0.1",
+  "private": true,
+  "main": "ElectronicLock.jsx"
+}

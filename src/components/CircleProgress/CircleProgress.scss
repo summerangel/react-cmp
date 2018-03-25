@@ -1,0 +1,20 @@
+.circle-progress {
+  circle {
+    stroke-width: 8px;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  &__bar {
+    stroke-width: 8px;
+    stroke-linecap: round;
+    transform: scale(0.9);
+    transform-origin: center;
+
+    transition: stroke-dashoffset .5s linear;
+  }
+}
