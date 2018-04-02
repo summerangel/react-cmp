@@ -1,0 +1,22 @@
+
+.arrow-wrap {
+
+  .arrow_left {
+    margin: 5px auto;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -11px;
+    top: -6px;
+    .triangle_top {
+      border-left: 12px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 26px solid #FAD961;
+    }
+    .triangle_bottom {
+      border-left: 12px solid transparent;
+      border-right: 0 solid transparent;
+      border-top: 26.5px solid #FAD961;
+    }
+  }
+}

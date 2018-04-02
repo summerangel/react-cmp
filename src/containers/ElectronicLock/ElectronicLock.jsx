@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 
 import CircleProgress from 'components/CircleProgress';
+import Arrow from 'components/Arrow';
 import './ElectronicLock.scss';
 
 const CIRCLE_RADIUS = 175;
@@ -92,6 +93,9 @@ class ElectronicLock extends Component {
             电池电量{this.state.countRise}%
           </div>
         </CircleProgress>
+        <div>
+          <Arrow />
+        </div>
       </div>
     )
   }
