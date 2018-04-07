@@ -41,6 +41,7 @@
     "bluebird": "3.5.1",
     "bootstrap": "4.0.0-beta.2",
     "browser-next-tick": "1.1.0",
+    "classnames": "2.2.5",
     "consolidate": "0.15.0",
     "koa": "2.4.1",
     "koa-better-body": "3.0.4",
