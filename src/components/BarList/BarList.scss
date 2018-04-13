@@ -1,0 +1,35 @@
+.bar-list {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  .bar-item {
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .name {
+    font-size: 16px;
+    color: #333333;
+  }
+  .right-arrow {
+    display: inline-block;
+    position: relative;
+    padding-right: 48px;
+    font-size: 28px;
+    color: #BDBDBD;
+    &::after {
+      display: inline-block;
+      content: "";
+      height: 18px;
+      width: 18px;
+      border-width: 2px 2px 0 0;
+      border-color: #D6D6D6;
+      border-style: solid;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      position: absolute;
+      top: 50%;
+      right: 6px;
+      margin-top: -9px;
+    }
+  }
+}
