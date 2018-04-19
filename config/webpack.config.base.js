@@ -41,7 +41,7 @@ module.exports = {
       APP_PATH,
       'node_modules',
     ],
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.jsx', '.js', '.json'],
     alias: {
       'src': APP_PATH,
       'content': utils.resolve('src/content'),

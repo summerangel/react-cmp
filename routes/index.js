@@ -16,7 +16,10 @@ router.use(async function (ctx, next) {
   // console.log(`end of index router: ${ctx.path}`);
 });
 
-router.get('/', async function (ctx) {
+router.get([
+  '/',
+  '/lock'
+], async function (ctx) {
   ctx.state = {
     title: 'using nunjucks template'
   };

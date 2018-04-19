@@ -2,10 +2,11 @@
   margin-top: 20px;
   background-color: #FFFFFF;
   .bar-item {
-    padding: 28px 40px;
+    padding: 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #F6F6F6;
   }
   .name {
     font-size: 16px;
@@ -15,14 +16,14 @@
     display: inline-block;
     position: relative;
     padding-right: 48px;
-    font-size: 28px;
+    font-size: 16px;
     color: #BDBDBD;
     &::after {
       display: inline-block;
       content: "";
-      height: 18px;
-      width: 18px;
-      border-width: 2px 2px 0 0;
+      height: 9px;
+      width: 9px;
+      border-width: 1px 1px 0 0;
       border-color: #D6D6D6;
       border-style: solid;
       transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);

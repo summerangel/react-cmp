@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+
 import nextTick from 'browser-next-tick';
 
 import ElectronicLock from 'containers/ElectronicLock';
@@ -12,8 +16,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*<ElectronicLock />*/}
-        <Demo />
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Demo}/>
+            <Route exact path="/lock" component={ElectronicLock} />
+          </Switch>
+        </Router>
       </div>
     );
   }
