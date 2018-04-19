@@ -8,7 +8,7 @@ after downloading,the following steps to start the project:
 #### 2、open two terminals：one run: npm run watch ，and the other run: npm start
 #### 3、the link in the browser to look the effect：http://localhost:3000/
 
-#### the interface after running will looks like 
+#### the interface after running will look like 
 
 it doesn't matter to look ugly, I just want to save the code how to realise
 
