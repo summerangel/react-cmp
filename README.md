@@ -12,6 +12,6 @@ after downloading,the following steps to start the project:
 
 it doesn't matter to look ugly, I just want to save the code how to realise
 
-![image](http://github.com/summerangel/react-cmp/raw/master/readme_pic/demo.jpg)
+![demo](https://github.com/summerangel/react-cmp/raw/master/readme_pic/demo.jpg)
 
-![image](http://github.com/summerangel/react-cmp/raw/master/readme_pic/lock.jpg)
+![lock](https://github.com/summerangel/react-cmp/raw/master/readme_pic/lock.jpg)
