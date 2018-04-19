@@ -1,12 +1,17 @@
 # react-cmp
 
-some ui created in react.
+some ui realised in react.
 
-下载代码后
+after downloading,the following steps to start the project:
 
-#### 1、yarn 或者 npm install
-#### 2、起两个终端：一个运行 npm run watch ，一个运行 npm run start
-#### 3、浏览器中打开：http://localhost:3000/
+#### 1、yarn or npm install
+#### 2、open two terminals：one run: npm run watch ，and the other run: npm start
+#### 3、the link in the browser to look the effect：http://localhost:3000/
 
-#### 运行后界面
+#### the interface after running will looks like 
 
+it doesn't matter to look ugly, I just want to save the code how to realise
+
+![image](http://github.com/summerangel/react-cmp/raw/master/readme_pic/demo.jpg)
+
+![image](http://github.com/summerangel/react-cmp/raw/master/readme_pic/lock.jpg)

@@ -9,14 +9,14 @@ class BarList extends Component {
 
   render() {
     return (
-      <div class='bar-list'>
-        <div class='bar-item'>
-          <div class='name'>优惠券管理</div>
-          <div class='right-arrow'>暂无设置</div>
+      <div className='bar-list'>
+        <div className='bar-item'>
+          <div className='name'>优惠券管理</div>
+          <div className='right-arrow'>暂无设置</div>
         </div>
-        <div class='bar-item'>
-          <div class='name'>满减活动</div>
-          <div class='right-arrow'>暂无设置</div>
+        <div className='bar-item'>
+          <div className='name'>满减活动</div>
+          <div className='right-arrow'>暂无设置</div>
         </div>
       </div>
     )

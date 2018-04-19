@@ -24,7 +24,7 @@ class Demo extends Component {
     return (
       <div className="demo-wrapper">
         <div>
-          <div style={{ paddingLeft: '15px' }}>1、样式实现向左箭头</div>
+          <div style={{ paddingLeft: '15px' }}>1、css实现向左箭头</div>
           <div className="arrow-demo">
             <Arrow />
           </div>
