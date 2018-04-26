@@ -1,0 +1,34 @@
+
+.css-test-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  .text-style {
+    width: 120px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    transition: color 1s linear .05s;
+  }
+  .switched {
+    color: blue;
+    width: 130px !important;
+  }
+  .word-line {
+    width: 0;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    transition: width .1s linear .5s;
+  }
+  .switch-style {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #F6F6F6;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
