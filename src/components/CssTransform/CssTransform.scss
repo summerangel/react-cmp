@@ -1,0 +1,40 @@
+.css-transform-wrapper {
+  display: flex;
+  padding-left: 50px;
+  .box {
+    width: 60px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    background-color: #F6F6F6;
+    border: 2px solid #D6D6D6;
+  }
+  .box-one {
+    transform: translate(60px) skew(30deg);
+  }
+  .box-two {
+    transform: translate(150px) scaleX(.5);
+  }
+  .box-three {
+    transform: translate(210px) rotate(45deg);
+  }
+  .box-four {
+    transform: translate(330px, 30px);
+  }
+  .box-five {
+    transform: translate(390px, 30px) skew(10deg, 40deg);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

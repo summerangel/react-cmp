@@ -68,6 +68,10 @@ class Demo extends Component {
           <div id="cubic-bezier" className="demo-box">Cubic-bezier</div>
         </div>
 
+        <div className="threed-test">
+          3d test
+        </div>
+
         <SlowUpPop show={this.state.openPopUp} onClose={this.togglePopUp} />
       </div>
     );
