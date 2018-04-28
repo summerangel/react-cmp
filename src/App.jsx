@@ -10,6 +10,7 @@ import nextTick from 'browser-next-tick';
 import ElectronicLock from 'containers/ElectronicLock';
 import Demo from 'containers/Demo';
 import IfeTask from 'containers/IFETask';
+import SmileCat from 'components/SmileCat';
 
 window.nextTick = nextTick;
 
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/" component={Demo}/>
             <Route exact path="/lock" component={ElectronicLock} />
             <Route exact path="/ife-task" component={IfeTask} />
+            <Route exact path="/smile-cat" component={SmileCat} />
           </Switch>
         </Router>
       </div>
