@@ -1,0 +1,53 @@
+.css-reverse-wrapper {
+  perspective: 1000;
+  margin: auto;
+  //鼠标放上去翻转
+  &:hover .img-container {
+    transform: rotateY(180deg);
+  }
+  //翻转速度设置
+  .img-container {
+    transition: 1s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+}
+.css-reverse-wrapper, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+//翻转页的时候隐藏背面
+.front, .back {
+  backface-visibility: hidden;
+  transition: transform 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+//前面板放在上面
+.front {
+  transform: rotateY(0deg);
+}
+//背面初始的时候隐藏
+.back {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

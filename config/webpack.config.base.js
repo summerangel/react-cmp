@@ -120,7 +120,10 @@ module.exports = {
       {
         from: utils.resolve('src/assets/static'),
         to: utils.resolve('build/app/assets/static'),
-      },
+      },{
+        from: utils.resolve('src/assets/ifeimages'),
+        to: utils.resolve('build/app/assets/ifeimages'),
+      }
     ]),
     new ManifestPlugin(),
   ],
