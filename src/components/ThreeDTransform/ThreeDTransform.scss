@@ -1,0 +1,67 @@
+.three-d-transform-wrapper {
+  padding-top: 5%;
+  //变形父元素，perspective需要设置在变形元素父元素上才会起3D作用,否则是2D效果
+  .viewport {
+    perspective: 900px;
+    position: relative;
+    //变形元素
+    .cube {
+      margin: 0 auto;
+      height: 300px;
+      width: 300px;
+      transform-style: preserve-3d;
+      & > div {
+        position: absolute;
+        opacity: .4;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(17, 58, 104);
+        border: 4px solid rgb(29, 129, 240);
+      }
+      & > div:first-child {
+        transform: rotateX(90deg) translateZ(150px);
+      }
+      & > div:nth-child(2) {
+        transform: translateZ(150px);
+        outline: 1px solid transparent;
+      }
+      & > div:nth-child(3) {
+        transform: rotateY(90deg) translateZ(150px);
+      }
+      & > div:nth-child(4) {
+        transform: rotateY(180deg) translateZ(150px);
+      }
+      & > div:nth-child(5) {
+        transform: rotateY(-90deg) translateZ(150px);
+      }
+      & > div:nth-child(6) {
+        transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
+      }
+      &:hover {
+        //鼠标放上去触发
+        animation: turn-around 10s infinite;
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+}
+
+@keyframes turn-around {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(-360deg)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
