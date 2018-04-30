@@ -1,0 +1,89 @@
+.dog-show-wrapper {
+  width: 100%;
+  position: relative;
+  .big-img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .small-img-wrap {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -465px;
+    width: 962px;
+    display: block;
+    text-align: center;
+    z-index: 3;
+    .small-img {
+      position: relative;
+      width: 178px;
+      height: 118px;
+      margin-right: 10px;
+      display: inline-block;
+      & > img {
+        width: 178px;
+        height: 118px;
+      }
+      .img-mask {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 178px;
+        height: 118px;
+        background-color: rgba(0, 0, 0, .5);
+      }
+      &:hover {
+        .img-mask {
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+
+  .animate-0 {
+    animation: dog-one .5s ease-out;
+  }
+  .animate-1 {
+    animation: dog-two .5s ease-out;
+  }
+  .animate-2 {
+    animation: dog-three 1s ease-in;
+  }
+  .animate-3 {
+    animation: dog-four 1s ease-out;
+  }
+  .animate-4 {
+    animation: dog-five .7s ease-in-out;
+  }
+}
+
+@keyframes dog-one {
+  0% {  transform: translateX(-500px); }
+  100% { transform: translateX(0); }
+}
+@keyframes dog-two {
+  0% {  transform: translateY(350px); }
+  100% { transform: translateY(0); }
+}
+@keyframes dog-three {
+  0% {
+    transform: scale(.1);
+  }
+  100% {transform: scale(1)}
+}
+@keyframes dog-four {
+  0% {
+    transform: scale(2);
+  }
+  100% {transform: scale(1)}
+}
+@keyframes dog-five {
+  0% {
+    transform: scale(.1) rotate(-360deg);
+  }
+  100% {transform: scale(1) rotate(0deg)}
+}
