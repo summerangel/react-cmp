@@ -13,6 +13,7 @@ import IfeTask from 'containers/IFETask';
 import SmileCat from 'components/SmileCat';
 import ThreeDTransform from 'components/ThreeDTransform';
 import DogShow from 'components/DogShow';
+import AnimateLogin from 'components/AnimateLogin';
 
 window.nextTick = nextTick;
 
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/smile-cat" component={SmileCat} />
             <Route exact path="/three-d-transform" component={ThreeDTransform} />
             <Route exact path="/dog-show" component={DogShow} />
+            <Route exact path="/animate-login" component={AnimateLogin} />
           </Switch>
         </Router>
       </div>

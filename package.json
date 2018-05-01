@@ -38,6 +38,7 @@
   "readme": "README.md",
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.42",
+    "animate.css": "^3.6.1",
     "bluebird": "3.5.1",
     "bootstrap": "4.0.0-beta.2",
     "browser-next-tick": "1.1.0",

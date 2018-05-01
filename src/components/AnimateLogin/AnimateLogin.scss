@@ -1,0 +1,97 @@
+.animate-login-wrapper {
+  .site-container {
+    max-width: 400px;
+    margin: 10px auto;
+    padding-left: .6em;
+    padding-right: .6em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    border-radius: 2px;
+    padding: 1em 1.5em;
+  }
+  .form-wrap {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    vertical-align: top;
+    .form-input {
+      display: block;
+      position: relative;
+      margin-top: 1em;
+      padding: .84em 0;
+      width: 100%;
+      box-sizing: border-box;
+      color: #444;
+      font-size: 1.6rem;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      &:focus {
+        background-position: 0 0;
+        color: #444;
+      }
+    }
+    .form-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      width: 100%;
+      height: calc(99%);
+      text-align: left;
+      pointer-events: none;
+      color: #999;
+      .form-label-content {
+        position: absolute;
+      }
+    }
+  }
+  .form-submit-wrap {
+    padding: 1.6rem 0;
+    .form-input-submit {
+      .btn {
+        width: 100%;
+        display: inline-block;
+        padding: .7em 1.5em;
+        border-radius: 2px;
+        background-color: #2196f3;
+        color: #FFFFFF;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 1.6rem;
+        box-shadow: 0 1px 3px 0 rgba(3, 30, 51, .24), 0 1px 2px 0 rgba(3, 30, 51, .12);
+        transition: all .2s ease;
+        &:focus, &:hover {
+          background-color: #0d8aee;
+        }
+      }
+    }
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  border: 0px solid #CCC;
+}
+
+
+
+
+
+
+
+
+
+

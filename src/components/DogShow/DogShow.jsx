@@ -10,7 +10,7 @@ import './DogShow.scss';
 
 class DogShow extends Component {
   state ={
-    currIndex: 1,
+    currIndex: 0,
     dogs: [
       `${env.prefix}assets/ifeimages/dog/dog_one.jpg`,
       `${env.prefix}assets/ifeimages/dog/dog_two.jpg`,
@@ -30,7 +30,7 @@ class DogShow extends Component {
     //
     return (
       <div style={{height: window.innerHeight}} className="dog-show-wrapper">
-        <div style={{backgroundImage: `url(${this.state.dogs[0]})`, height: window.innerHeight}} className={classnames('big-img', `animate-${this.state.currIndex}`)}></div>
+        <div style={{backgroundImage: `url(${this.state.dogs[this.state.currIndex]})`, height: window.innerHeight}} className={classnames('big-img', `animate-${this.state.currIndex}`)}></div>
         <div className="small-img-wrap">
           {
             this.state.dogs.map((dog, index) => {

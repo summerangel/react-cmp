@@ -22,7 +22,8 @@ router.get([
   '/ife-task',
   '/smile-cat',
   '/three-d-transform',
-  '/dog-show'
+  '/dog-show',
+  '/animate-login'
 ], async function (ctx) {
   ctx.state = {
     title: 'using nunjucks template'
