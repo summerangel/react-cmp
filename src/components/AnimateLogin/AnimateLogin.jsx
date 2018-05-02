@@ -90,7 +90,7 @@ class AnimateLogin extends Component {
                        onBlur={this.onEmailBlur}
                 />
                 <div className={classnames({'horizontal-line': this.state.emailFocused, 'horizontal-line-animate': !this.state.emailFocused})}></div>
-                <label style={!!this.state.emailFocused ? emailTranslate : {}} className="form-label" htmlFor="email">
+                <label style={(!!this.state.email || this.state.emailFocused) ? emailTranslate : {}} className="form-label" htmlFor="email">
                   <span className="form-label-content">Email</span>
                 </label>
               </div>
@@ -101,7 +101,7 @@ class AnimateLogin extends Component {
                        onBlur={this.onPasswordBlur}
                 />
                 <div className={classnames({'horizontal-line': this.state.pwdFocused, 'horizontal-line-animate': !this.state.pwdFocused})}></div>
-                <label style={!!this.state.pwdFocused ? pwdTranslate : {}} className="form-label" htmlFor="password">
+                <label style={(!!this.state.password || this.state.pwdFocused) ? pwdTranslate : {}} className="form-label" htmlFor="password">
                   <span className="form-label-content">Password</span>
                 </label>
               </div>
