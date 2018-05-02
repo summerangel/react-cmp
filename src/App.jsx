@@ -14,6 +14,7 @@ import SmileCat from 'components/SmileCat';
 import ThreeDTransform from 'components/ThreeDTransform';
 import DogShow from 'components/DogShow';
 import AnimateLogin from 'components/AnimateLogin';
+import BdHomeAnimate from 'components/BdHomeAnimate';
 
 window.nextTick = nextTick;
 
@@ -30,6 +31,7 @@ class App extends Component {
             <Route exact path="/three-d-transform" component={ThreeDTransform} />
             <Route exact path="/dog-show" component={DogShow} />
             <Route exact path="/animate-login" component={AnimateLogin} />
+            <Route exact path="/bd-home-animate" component={BdHomeAnimate} />
           </Switch>
         </Router>
       </div>
