@@ -40,6 +40,21 @@
         color: #444;
       }
     }
+    .horizontal-line {
+      height: 2px;
+      background-color: #0d8aee;
+      position: relative;
+      top: -3px;
+      width: 100%;
+    }
+    .horizontal-line-animate {
+      height: 2px;
+      background-color: #0d8aee;
+      position: relative;
+      top: -3px;
+      transition: transform .5s ease-out;
+      transform: translateX(-101%);
+    }
     .form-label {
       position: absolute;
       bottom: 0;
@@ -50,6 +65,7 @@
       text-align: left;
       pointer-events: none;
       color: #999;
+      font-size: 1em;
       .form-label-content {
         position: absolute;
       }

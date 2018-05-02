@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 
 import './AnimateLogin.scss';
+import 'animate.css';
 
 class AnimateLogin extends Component {
   state = {
@@ -28,9 +29,16 @@ class AnimateLogin extends Component {
   onEmailFocus = (e) => {
     e.preventDefault();
     this.setState({
-      emailBottom: 18,
-      emailFocused: true,
-      pwdFocused: false
+      emailBottom: 15,
+      emailFocused: true
+    });
+  };
+
+  onEmailBlur = (e) => {
+    e.preventDefault();
+    this.setState({
+      emailBottom: 15,
+      emailFocused: false
     });
   };
 
@@ -45,27 +53,29 @@ class AnimateLogin extends Component {
   onPasswordFocus = (e) => {
     e.preventDefault();
     this.setState({
-      pwdBottom: 18,
-      emailFocused: false,
+      pwdBottom: 15,
       pwdFocused: true
+    });
+  };
+
+  onPasswordBlur = (e) => {
+    e.preventDefault();
+    this.setState({
+      emailBottom: 15,
+      pwdFocused: false
     });
   };
 
   render() {
     const emailTranslate = {
-      transition: 'bottom .1s linear',
-      bottom: `${this.state.emailBottom}px`
+      transition: 'all .1s linear',
+      bottom: `${this.state.emailBottom}px`,
+      fontSize: '.9em'
     };
     const pwdTranslate = {
-      transition: 'bottom .1s linear',
-      bottom: `${this.state.pwdBottom}px`
-    };
-    const borderNoAnimate = {
-      borderBottom: '2px solid #0d8aee'
-    };
-    const borderAnimate = {
-      transition: 'border-bottom .5s ease-out',
-      borderBottom: '1px solid #ddd'
+      transition: 'all .1s linear',
+      bottom: `${this.state.pwdBottom}px`,
+      fontSize: '.9em'
     };
     return (
       <div className="animate-login-wrapper">
@@ -74,18 +84,28 @@ class AnimateLogin extends Component {
             <h3>Login</h3>
             <form>
               <div className="form-wrap">
-                <input type="email" style={this.state.emailFocused ? borderNoAnimate : borderAnimate} value={this.state.email} onFocus={this.onEmailFocus} onChange={this.onEmailInput} className="form-input" name="email"/>
-                <label style={emailTranslate} className="form-label" htmlFor="email">
+                <input type="email" value={this.state.email} className="form-input" name="email"
+                       onFocus={this.onEmailFocus}
+                       onChange={this.onEmailInput}
+                       onBlur={this.onEmailBlur}
+                />
+                <div className={classnames({'horizontal-line': this.state.emailFocused, 'horizontal-line-animate': !this.state.emailFocused})}></div>
+                <label style={!!this.state.emailFocused ? emailTranslate : {}} className="form-label" htmlFor="email">
                   <span className="form-label-content">Email</span>
                 </label>
               </div>
               <div className="form-wrap">
-                <input type="text" style={this.state.pwdFocused ? borderNoAnimate : borderAnimate} value={this.state.password} onFocus={this.onPasswordFocus} onChange={this.onPasswordInput} className="form-input" name="password"/>
-                <label style={pwdTranslate} className="form-label" htmlFor="password">
+                <input type="text" value={this.state.password} className="form-input" name="password"
+                       onFocus={this.onPasswordFocus}
+                       onChange={this.onPasswordInput}
+                       onBlur={this.onPasswordBlur}
+                />
+                <div className={classnames({'horizontal-line': this.state.pwdFocused, 'horizontal-line-animate': !this.state.pwdFocused})}></div>
+                <label style={!!this.state.pwdFocused ? pwdTranslate : {}} className="form-label" htmlFor="password">
                   <span className="form-label-content">Password</span>
                 </label>
               </div>
-              <div className={classnames('form-submit-wrap', {'pulse infinite': (!!this.state.email && !!this.state.password)})}>
+              <div className={classnames('form-submit-wrap', {'animated pulse infinite': (!!this.state.email && !!this.state.password)})}>
                 <div className="form-input-submit">
                   <button type="submit" name="submit" className="btn">Submit</button>
                 </div>
