@@ -14,6 +14,10 @@ class Arrow extends Component {
           <div className="triangle_top"></div>
           <div className="triangle_bottom"></div>
         </div>
+
+        {/* simpler code to realize */}
+        <div className="arrow-right"></div>
+        <div className="ribbon"></div>
       </div>
     )
   }

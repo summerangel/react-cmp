@@ -19,4 +19,20 @@
       border-top: 26.5px solid #FAD961;
     }
   }
+
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-width: 25px 13px 25px 13px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+  }
+  .ribbon {
+    width: 0;
+    height: 50px;
+    border-left: 25px solid red;
+    border-right: 25px solid red;
+    border-bottom: 25px solid transparent;
+    margin-left: 200px;
+  }
 }
