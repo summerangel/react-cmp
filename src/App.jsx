@@ -15,6 +15,7 @@ import ThreeDTransform from 'components/ThreeDTransform';
 import DogShow from 'components/DogShow';
 import AnimateLogin from 'components/AnimateLogin';
 import BdHomeAnimate from 'components/BdHomeAnimate';
+import Filter from 'containers/Filter';
 
 window.nextTick = nextTick;
 
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact path="/dog-show" component={DogShow} />
             <Route exact path="/animate-login" component={AnimateLogin} />
             <Route exact path="/bd-home-animate" component={BdHomeAnimate} />
+            <Route exact path="/filter" component={Filter} />
           </Switch>
         </Router>
       </div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>tab-下拉@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="初-暂定" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="资产字典-全部资产" transform="translate(-54.000000, -151.000000)" fill="#DDDDDD" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(20.000000, 144.000000)">
+                <g id="下-拉" transform="translate(34.000000, 7.000000)">
+                    <path d="M8.79561809,2.07035647 L4.95322933,5.81050657 C4.83842199,5.9267882 4.67292681,5.99343831 4.49901387,5.9934334 C4.32512628,5.9934334 4.15966961,5.92682927 4.04479841,5.81050657 L0.202409654,2.07035647 C0.0148218321,1.89399625 -0.0431406972,1.6369606 0.0538148063,1.40994371 C0.15077031,1.18292683 0.384728155,1.02439024 0.656625111,1.00281426 L8.33824104,1.00281426 C8.61119186,1.02345216 8.84620357,1.18105066 8.94315907,1.40900563 C9.04116844,1.6369606 8.98320591,1.89305816 8.79561809,2.07035647 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

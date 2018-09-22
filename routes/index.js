@@ -24,7 +24,8 @@ router.get([
   '/three-d-transform',
   '/dog-show',
   '/animate-login',
-  '/bd-home-animate'
+  '/bd-home-animate',
+  '/filter'
 ], async function (ctx) {
   ctx.state = {
     title: 'using nunjucks template'

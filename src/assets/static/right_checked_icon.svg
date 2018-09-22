@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="49" width="78" height="34" rx="4"></rect>
+    </defs>
+    <g id="初-暂定" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="资产字典-全部资产" transform="translate(-75.000000, -265.000000)">
+            <g id="Group-5" transform="translate(0.000000, 176.000000)">
+                <g id="Group-10" transform="translate(15.000000, 20.000000)">
+                    <g id="Group-12">
+                        <g id="Group-13">
+                            <g id="Mask">
+                                <use fill-opacity="0.25" fill="#FBE13B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#FFE431" stroke-width="1" x="0.5" y="49.5" width="77" height="33" rx="4"></rect>
+                            </g>
+                            <g id="Group-9" transform="translate(60.000000, 69.000000)">
+                                <path d="M17.4396973,0 L9.61085712,6.27640361 L0,13.9814553 L13.4396973,13.9814553 C15.6488363,13.9814553 17.4396973,12.1905943 17.4396973,9.98145534 L17.4396973,0 Z" id="Mask" fill="#FFE431"></path>
+                                <polyline id="Path-3" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.571033, 9.313660) rotate(8.000000) translate(-12.571033, -9.313660) " points="9.37200033 10.2624207 12.4542582 12.2102912 15.7700664 6.41702953"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
