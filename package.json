@@ -93,6 +93,7 @@
     "file-loader": "1.1.6",
     "html-loader": "0.5.1",
     "html-webpack-plugin": "2.30.1",
+    "jsencrypt": "3.0.0-rc.1",
     "mocha": "4.0.1",
     "node-sass": "4.7.2",
     "postcss-loader": "2.0.9",
